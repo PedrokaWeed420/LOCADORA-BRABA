@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAO", "DAO\DAO.csproj", "{0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{FA95C594-C077-4B74-9A1F-726AC21B3A17}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{B8E281FB-70EB-4337-99ED-53324C2BA6E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{6BEAC0B5-358E-432B-B11C-AAC6F8676CF6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{FA95C594-C077-4B74-9A1F-726AC21B3A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA95C594-C077-4B74-9A1F-726AC21B3A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA95C594-C077-4B74-9A1F-726AC21B3A17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8E281FB-70EB-4337-99ED-53324C2BA6E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8E281FB-70EB-4337-99ED-53324C2BA6E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8E281FB-70EB-4337-99ED-53324C2BA6E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8E281FB-70EB-4337-99ED-53324C2BA6E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BEAC0B5-358E-432B-B11C-AAC6F8676CF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEAC0B5-358E-432B-B11C-AAC6F8676CF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEAC0B5-358E-432B-B11C-AAC6F8676CF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEAC0B5-358E-432B-B11C-AAC6F8676CF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

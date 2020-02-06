@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entity;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
 using System.Linq;
@@ -7,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace DAO.Mapping
 {
-    internal class Funcionario : EntityTypeConfiguration<Funcionario>
+    internal class LocacaoMapConfig : EntityTypeConfiguration<Locacao>
     {
-        public Funcionario()
+        public LocacaoMapConfig()
         {
-
+            this.ToTable("LOCACOES");
         }
     }
 }

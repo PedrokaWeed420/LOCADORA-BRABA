@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{03833EAE-6379-4694-A7BB-759EC2B77728}</ProjectGuid>
+    <ProjectGuid>{B8E281FB-70EB-4337-99ED-53324C2BA6E6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DAO</RootNamespace>
-    <AssemblyName>DAO</AssemblyName>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,24 +51,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LocacaoTesteStrategy.cs" />
-    <Compile Include="LocacaoDbContext.cs" />
-    <Compile Include="Mapping\ClienteMapConfig.cs" />
-    <Compile Include="Mapping\FilmeMapConfig.cs" />
-    <Compile Include="Mapping\FuncionarioMapConfig.cs" />
-    <Compile Include="Mapping\GeneroMapConfig.cs" />
-    <Compile Include="Mapping\LocacaoMapConfig.cs" />
+    <Compile Include="FilmeService.cs" />
+    <Compile Include="ClienteService.cs" />
+    <Compile Include="FuncionarioService.cs" />
+    <Compile Include="Interfaces\IClienteService.cs" />
+    <Compile Include="Interfaces\IFilmeService.cs" />
+    <Compile Include="Interfaces\IFuncionarioService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
+    <ProjectReference Include="..\DAO\DAO.csproj">
+      <Project>{03833EAE-6379-4694-A7BB-759EC2B77728}</Project>
+      <Name>DAO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entity\Entity.csproj">
       <Project>{FA95C594-C077-4B74-9A1F-726AC21B3A17}</Project>
       <Name>Entity</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

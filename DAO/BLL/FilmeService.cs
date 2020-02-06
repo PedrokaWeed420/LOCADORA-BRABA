@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity
+namespace BLL
 {
-    public interface ILocacaoService
+    public class FilmeService
     {
-        Response EfetuarLocacao(Locacao locacao);
     }
 }

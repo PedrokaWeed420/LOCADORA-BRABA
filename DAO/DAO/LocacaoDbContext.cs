@@ -14,7 +14,7 @@ namespace DAO
     {
         public LocacaoDbContext() : base(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=LocadoraDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False")
         {
-            Database.SetInitializer(new LocacaoDbContext());
+            Database.SetInitializer(new LocacaoTesteStrategy());
         }
 
         public DbSet<Cliente> Clientes { get; set; }

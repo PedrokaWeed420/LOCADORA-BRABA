@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entity
+namespace BLL
 {
-    public interface IFuncionarioService
+    public class FuncionarioService
     {
-        DataResponse<Funcionario> Autenticar(string email, string senha);
     }
 }

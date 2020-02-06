@@ -44,9 +44,6 @@
     <Compile Include="DataResponse.cs" />
     <Compile Include="Enums\Classificacao.cs" />
     <Compile Include="FilmeResultSet.cs" />
-    <Compile Include="Interfaces\IFilmeService.cs" />
-    <Compile Include="Interfaces\IFuncionarioService.cs" />
-    <Compile Include="Interfaces\ILocacaoService.cs" />
     <Compile Include="Locacao.cs" />
     <Compile Include="Cliente.cs" />
     <Compile Include="Funcionario.cs" />
